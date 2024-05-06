@@ -3,12 +3,12 @@
 import getpass
 class ATM:
     def init(self, user_id, pin, balance=4500):
-        self.user_id = Tushar_b1
+        self.user_id = tushar_b1
         self.pin_hash = bcrypt.hashpw(pin.encode(), bcrypt.gensalt())
         self.balance = 4500
         self.transactions = []
     def authenticate(self, user_id, pin):
-        if user_id == self.Tushar_b1 and bcrypt.checkpw(pin.encode(), self.pin_hash):
+        if user_id == self.tushar_b1 and bcrypt.checkpw(pin.encode(), self.pin_hash):
             return True
         else:
             return False
